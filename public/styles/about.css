@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding: 15px 4%;
+}
+.about-container{
+    border: 1px solid grey;
+    padding: 20px;    
+    border-radius: 20px;
+    margin:20px auto 3%;
+}
+.about-container h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.about-container p{
+    word-spacing: 10px;
+}
