@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/modal.css">
+</head>
+<body>
+    <div id="loginModal" class="modal hidden">
+
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <h2>Join Safiri</h2>
+
+            <div class="formToggle">
+                <label for="login" id="login">
+                    <input type="radio" name="authMode" checked>
+                    Sign In
+                </label>
+                <label for="register" id="register">
+                    <input type="radio" name="authMode">
+                    Register
+                </label>
+            </div>
+            
+            <form id="loginForm" class="authForm">
+                <div class="loginGroup">
+                    <select name="phoneGroup" >
+                        <option value="254">254</option>
+                        <option value="256">256</option>
+                        <option value="257">257</option>
+                        <option value="258">258</option>
+                        <option value="259">259</option>
+                        <option value="260">260</option>
+                    </select>
+                    <input type="text" placeholder="number" name="phone" required>
+                </div>
+                <input type="password" name="password" placeholder="password" required>
+                
+                <div class="passwordresetgroup">
+                    <div class="radiogroup">
+                        <input type="checkbox">
+                        <p>Remember me</p>
+                    </div>
+                    <a href="#">forgot password?</a>
+                </div>
+                <button class="modal-btn">Let me in</button>
+            </form>
+
+            <form id="registerForm" class="authForm hidden">
+                <input type="text" name="name" placeholder="Name" required>
+                <div class="phoneGroup">
+                    <select name="counryCode" required>
+                        <option value="code">Code</option>
+                        <option value="254">254</option>
+                        <option value="255">255</option>
+                        <option value="256">256</option>
+                        <option value="257">257</option>
+                        <option value="258">258</option>
+                        <option value="259">259</option>
+                        <option value="260">260</option>
+                    </select>
+                    <input type="text" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="clientInfo">
+                    <input type="date" placeholder="Date of Birth" name="birthday" required>
+                    <select name="gender" required>
+                        <option value="gender">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+                <div class="loginCredentials">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password">
+                </div>
+                <button class="registerBtn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="/scripts/modal.js"></script>
+</body>
+</html>

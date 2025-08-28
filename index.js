@@ -20,9 +20,6 @@ app.get("/about", (req, res)=>{
 app.get("/contact", (req, res)=>{
     res.render("contact.ejs");
 });
-app.get("/join", (req, res)=>{
-    res.render("join.ejs");
-});
 
 app.post("/contact", (req, res)=>{
     const {name, countryCode, number, email, subject, message} = req.body;

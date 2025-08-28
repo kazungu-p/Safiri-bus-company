@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+}
+.modalContent{
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+
+}
+.formToggle{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 10px 0;
+}
+.modalContent h2{
+    text-align: center;
+    border-bottom: 1px solid #2222;
+    padding: 8px 0;
+}
+.modalContent form{
+    padding: 14px;
+}
+.loginGroup{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+.loginGroup select{
+    flex: 0 0 80px;
+    border-radius: 4px;
+    padding: 8px;
+}
+.loginGroup input{
+    flex: 1;
+}
+.modalContent form input{
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.passwordresetgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.radiogroup{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.radiogroup p{
+    margin: 0;
+    white-space: nowrap;
+    font-size: 0.9em;
+}
+.modal-btn{
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.modal.show{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10vh;
+}
+.close{
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: #932F67;
+}
+
+/* -------------register-form-------------------- */
+
+.phoneGroup, .clientInfo, .loginCredentials{
+    display: flex;
+    gap: 5px;
+    margin: 8px 0;
+}
+.phoneGroup select, .clientInfo select{
+    flex: 0 0 100px;
+    border-radius: 3px;
+    padding: 10px;
+}
+.phoneGroup input{
+    flex: 1;
+}
+.registerBtn{
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.registerBtn:hover, .modal-btn:hover{
+    background: #932F67;
+    transition: 0.3s ease-in;
+}  
+.authForm{
+    display: flex;
+    flex-direction: column;
+} 
+.authForm.hidden{
+    display: none;
+}
