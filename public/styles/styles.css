@@ -43,6 +43,26 @@ ul{
 }
 .nav-btm ul li a{
     color: white;
+    position: relative;
+    padding: 5px;
+}
+.nav-btm ul li a::after{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(135deg, #D92C54, #932F67);
+    content: "";
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-btm ul li a:hover::after{
+    width: 100%;
+}
+.nav-btm ul li a.active::after{
+    width: 100%;
 }
 .landing{
     position: relative;

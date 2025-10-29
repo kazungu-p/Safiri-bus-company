@@ -6,6 +6,7 @@
 }
 .container{
     padding: 15px 4%;
+    border-bottom: 2px solid #932F67;
 }
 .about-container{
     border: 1px solid grey;
@@ -17,7 +18,10 @@
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 2px solid #2222;
 }
 .about-container p{
     word-spacing: 10px;
+    padding: 10px 0;
 }
